@@ -1,0 +1,48 @@
+{
+  "jobs": [
+    {
+      "id": 5001,
+      "title": "Software Engineer - Backend (University Hire)",
+      "absolute_url": "https://boards.greenhouse.io/datadog/jobs/5001",
+      "location": {"name": "New York, NY"},
+      "offices": [{"id": 1, "name": "New York, NY"}],
+      "updated_at": "2026-05-15T10:00:00Z",
+      "content": "<p>Join the team building the backbone of cloud monitoring. Work primarily in Go and Python.</p>"
+    },
+    {
+      "id": 5002,
+      "title": "Software Engineer - Infrastructure (University Hire)",
+      "absolute_url": "https://boards.greenhouse.io/datadog/jobs/5002",
+      "location": {"name": "San Francisco, CA"},
+      "offices": [{"id": 2, "name": "San Francisco, CA"}],
+      "updated_at": "2026-05-20T14:00:00Z",
+      "content": "<p>Build high-performance observability infrastructure at scale.</p>"
+    },
+    {
+      "id": 5003,
+      "title": "Senior Software Engineer - Agent Platform",
+      "absolute_url": "https://boards.greenhouse.io/datadog/jobs/5003",
+      "location": {"name": "New York, NY"},
+      "offices": [{"id": 1, "name": "New York, NY"}],
+      "updated_at": "2026-05-25T09:00:00Z",
+      "content": "<p>7+ years of experience required. Lead architecture decisions.</p>"
+    },
+    {
+      "id": 5004,
+      "title": "Software Engineer Intern - Summer 2027",
+      "absolute_url": "https://boards.greenhouse.io/datadog/jobs/5004",
+      "location": {"name": "New York, NY"},
+      "offices": [{"id": 1, "name": "New York, NY"}],
+      "updated_at": "2026-06-01T08:00:00Z",
+      "content": "<p>12-week summer internship for students graduating 2027-2028.</p>"
+    },
+    {
+      "id": 9999,
+      "title": "",
+      "absolute_url": "",
+      "location": {"name": "Remote"},
+      "updated_at": "2026-05-01T00:00:00Z",
+      "content": ""
+    }
+  ]
+}

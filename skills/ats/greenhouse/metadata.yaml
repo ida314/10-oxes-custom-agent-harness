@@ -1,0 +1,24 @@
+name: query_greenhouse_jobs
+version: 0.1.0
+domain: ats
+status: experimental
+inputs:
+  - company_name
+  - board_token
+outputs:
+  - normalized_jobs
+allowed_tools:
+  - http_get
+failure_modes:
+  - invalid or unknown board token (returns empty list, not an error)
+  - Greenhouse API schema change (parse errors logged in SkillResult.errors)
+  - rate limiting (429 → retry after backoff; not implemented in v0.1)
+  - company not on Greenhouse (returns empty list)
+eval_metrics:
+  - recall
+  - parse_success_rate
+  - duplicate_rate
+notes: >
+  Greenhouse board tokens are usually the company slug (e.g. "datadog", "stripe").
+  The API returns all open jobs by default. Entry-level filtering happens in the
+  harness, not in this skill.
