@@ -1,0 +1,44 @@
+[
+  {
+    "id": "lever-ramp-001",
+    "text": "Software Engineer, New Grad — Full Stack",
+    "hostedUrl": "https://jobs.lever.co/ramp/lever-ramp-001",
+    "applyUrl": "https://jobs.lever.co/ramp/lever-ramp-001/apply",
+    "categories": {
+      "location": "New York, NY",
+      "commitment": "Full-time",
+      "team": "Engineering"
+    },
+    "createdAt": 1747267200000,
+    "descriptionPlain": "Build the financial infrastructure that replaces legacy corporate cards. Work across TypeScript/React frontend and Python/Go backend.",
+    "description": "<p>Build the financial infrastructure...</p>"
+  },
+  {
+    "id": "lever-ramp-002",
+    "text": "Software Engineer, New Grad — Backend",
+    "hostedUrl": "https://jobs.lever.co/ramp/lever-ramp-002",
+    "applyUrl": "https://jobs.lever.co/ramp/lever-ramp-002/apply",
+    "categories": {
+      "location": "New York, NY",
+      "commitment": "Full-time",
+      "team": "Engineering"
+    },
+    "createdAt": 1747440000000,
+    "descriptionPlain": "Own backend services for Ramp's spend management platform.",
+    "description": "<p>Own backend services...</p>"
+  },
+  {
+    "id": "lever-ramp-003",
+    "text": "Principal Engineer, Payments Infrastructure",
+    "hostedUrl": "https://jobs.lever.co/ramp/lever-ramp-003",
+    "applyUrl": "https://jobs.lever.co/ramp/lever-ramp-003/apply",
+    "categories": {
+      "location": "New York, NY",
+      "commitment": "Full-time",
+      "team": "Engineering"
+    },
+    "createdAt": 1746748800000,
+    "descriptionPlain": "10+ years of software engineering experience required.",
+    "description": "<p>10+ years required...</p>"
+  }
+]

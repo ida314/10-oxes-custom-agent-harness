@@ -1,0 +1,22 @@
+name: query_lever_jobs
+version: 0.1.0
+domain: ats
+status: experimental
+inputs:
+  - company_name
+  - board_slug
+outputs:
+  - normalized_jobs
+allowed_tools:
+  - http_get
+failure_modes:
+  - unknown board slug (404 → empty result)
+  - Lever API schema change
+  - company not on Lever
+eval_metrics:
+  - recall
+  - parse_success_rate
+  - duplicate_rate
+notes: >
+  Lever postings API: https://api.lever.co/v0/postings/{slug}?mode=json
+  Returns array of posting objects. No auth required for public boards.
