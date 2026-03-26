@@ -1,0 +1,26 @@
+{
+  "jobPostings": [
+    {
+      "id": "ashby-linear-001",
+      "title": "Software Engineer, New Grad",
+      "jobUrl": "https://linear.app/careers/ashby-linear-001",
+      "applyUrl": "https://app.ashbyhq.com/linear/apply/ashby-linear-001",
+      "locationName": "San Francisco, CA",
+      "primaryLocation": "San Francisco, CA",
+      "publishedDate": "2026-05-10T00:00:00Z",
+      "descriptionPlain": "Join Linear's core product team. We care deeply about software craftsmanship.",
+      "description": "<p>Join Linear's core product team.</p>"
+    },
+    {
+      "id": "ashby-linear-002",
+      "title": "Staff Engineer, Infrastructure",
+      "jobUrl": "https://linear.app/careers/ashby-linear-002",
+      "applyUrl": "https://app.ashbyhq.com/linear/apply/ashby-linear-002",
+      "locationName": "San Francisco, CA",
+      "primaryLocation": "San Francisco, CA",
+      "publishedDate": "2026-04-20T00:00:00Z",
+      "descriptionPlain": "8+ years of experience leading infrastructure teams.",
+      "description": "<p>8+ years required.</p>"
+    }
+  ]
+}

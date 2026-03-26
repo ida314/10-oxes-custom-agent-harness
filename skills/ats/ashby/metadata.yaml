@@ -1,0 +1,22 @@
+name: query_ashby_jobs
+version: 0.1.0
+domain: ats
+status: experimental
+inputs:
+  - company_name
+  - board_slug
+outputs:
+  - normalized_jobs
+allowed_tools:
+  - http_get
+failure_modes:
+  - unknown board slug (returns empty list)
+  - Ashby API schema change
+  - company not on Ashby
+eval_metrics:
+  - recall
+  - parse_success_rate
+  - duplicate_rate
+notes: >
+  Ashby public job board API: https://api.ashbyhq.com/posting-api/job-board/{slug}
+  Returns JSON with a "jobPostings" array. No auth required.
