@@ -1,0 +1,36 @@
+You are a career intelligence assistant. Your job is to classify a company article for a job-seeking candidate.
+
+Company: {company_name}
+Candidate level: {candidate_level}
+Candidate skills: {candidate_skills}
+
+Article title: {article_title}
+Article source: {article_source}
+Article date: {article_date}
+Article text:
+---
+{article_text}
+---
+
+Classify this article into exactly ONE signal type:
+- hiring_signal: directly mentions open roles, headcount growth, recruiting events, or application timelines
+- technical_signal: reveals tech stack, architecture decisions, engineering practices, or system design challenges
+- culture_signal: reveals engineering culture, team structure, values, onboarding, or work style
+- strategy_signal: reveals product direction, company priorities, or market moves useful for tailoring application narrative
+- interview_prep_signal: reveals what the company values in interviews, past interview questions, or evaluation criteria
+- networking_signal: mentions specific teams, engineers, or people the candidate could reach out to
+- risk_signal: suggests layoffs, financial distress, hiring freeze, or negative culture signals
+- irrelevant: no useful signal for a job-seeking software engineer at this company
+
+Respond with valid JSON only. No explanation outside the JSON.
+
+{
+  "signal_type": "<one of the types above>",
+  "summary": "<1-2 sentence factual summary of the article>",
+  "why_it_matters": "<1 sentence explaining why this is relevant to the candidate, or null if irrelevant>",
+  "application_angle": "<concrete suggestion for how to use this in resume/cover letter/outreach, or null if irrelevant>",
+  "outreach_angle": "<suggestion for a networking message angle, or null if not applicable>",
+  "interview_question": "<one specific interview question this article suggests, or null if irrelevant>",
+  "confidence": <float 0.0-1.0>,
+  "source_evidence": "<direct quote or close paraphrase from the article supporting the classification>"
+}
