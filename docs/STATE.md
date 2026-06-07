@@ -2,7 +2,7 @@
 
 _Last updated: 2026-06-07_
 
-## Status: ALL PHASES COMPLETE (MVP)
+## Status: ALL PHASES COMPLETE (MVP) + Documentation restructure
 
 ```
 pytest tests/ → 174/174 PASSED
@@ -113,6 +113,33 @@ print(f'Jobs: {report.jobs_after_dedup}, Recommended: {sum(1 for s in report.sco
 # 7. With LLM (requires ANTHROPIC_API_KEY):
 ANTHROPIC_API_KEY=sk-... .venv/bin/python ...
 ```
+
+---
+
+## Documentation restructure (2026-06-07)
+
+Added README.md files at every level of the directory tree to make the System 1 / System 2 boundary explicit for new developers:
+
+- `README.md` — root project overview with two-system architecture, quick-start, and docs index
+- `docs/ONBOARDING.md` — guided developer onboarding for both systems
+- `harnesses/README.md` — harness directory overview, System 1 vs System 2 ownership, versioning convention
+- `harnesses/validators/README.md` — validator per-file reference
+- `harnesses/job_discovery/README.md` — pipeline steps and output schema
+- `harnesses/article_discovery/README.md` — signal types and LLM/heuristic modes
+- `harnesses/application_packet/README.md` — safety guarantees and approval flow
+- `harnesses/browser_application/README.md` — auto-allowed vs approval-required actions
+- `skills/README.md` — skill protocol, lifecycle, and directory map
+- `skills/ats/README.md` — connector usage, fixtures, and how to add a new ATS
+- `skills/company_research/README.md` — per-skill descriptions
+- `skills/meta_harness/README.md` — proposer skill and write-permission spec
+- `optimizers/README.md` — loop design, Pareto objectives, and promotion procedure
+- `evals/README.md` — dataset layout, search/test split rule, metric reference
+- `db/README.md` — table ownership by system, key constraints, migration commands
+- `app/README.md` — TraceLogger API and trace directory layout
+- `tests/README.md` — test file → system mapping, fixture conventions
+- `prompts/README.md` — template variable reference
+
+No Python code was changed. All 174 tests continue to pass.
 
 ---
 
