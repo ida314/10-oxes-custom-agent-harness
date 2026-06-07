@@ -81,6 +81,37 @@ Phase 11 — Browser assistant with hard approval gates
 - `scripts/` for one-off and operational scripts.
 - `prompts/` for prompt templates (never inline long prompts in Python).
 
+### Commit format
+
+Every commit must use the prefix format: `[category] Short imperative summary`
+
+**One feature, bugfix, or change per commit. Do not bundle unrelated changes.**
+
+| Category | Use for |
+|----------|---------|
+| `[feat]` | New feature or capability |
+| `[fix]` | Bug fix |
+| `[test]` | Adding or updating tests |
+| `[docs]` | Documentation only |
+| `[refactor]` | Code restructuring with no behavior change |
+| `[harness]` | New or updated harness (`harnesses/`) |
+| `[skill]` | New or updated skill (`skills/`) |
+| `[eval]` | Eval datasets, metrics, or runners |
+| `[db]` | Schema changes, migrations |
+| `[runner]` | Eval runners or optimizer loop changes |
+| `[chore]` | Dependency updates, config, tooling |
+
+Examples:
+```
+[feat] Add Thompson sampling to search controller
+[fix] Correct entry_level_score threshold for intern titles
+[harness] Add article discovery harness v0 with heuristic fallback
+[skill] Add Ashby ATS connector with GraphQL support
+[eval] Add 15-case article signal seed dataset
+[db] Add normalized_hash UNIQUE index to jobs table
+[docs] Add ONBOARDING.md and README hierarchy
+```
+
 ---
 
 ## Detailed Docs
